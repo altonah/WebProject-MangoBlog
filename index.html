@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Blog</title>
+</head>
+<body>
+    <div class="logo">
+        <h1>Mango Blog</h1>
+    </div>
+    <hr>
+    <!-- 회원 목록 출력, 해당 회원 블로그 링크 aaa-->
+    <div class="member">
+        <h3>아래 맴버들의 블로그를 살펴 보십시오!</h3>
+        <ul>
+            <li>맴버1</li>
+            <li>맴버2</li>
+            <li>맴버3</li>
+            <li>맴버4</li>
+        </ul>
+        <a href="#">더보기...</a>
+    </div>
+    <hr>
+    <div class="project">
+        <h3>아래의 프로젝트가 진행중입니다...</h3>
+        <ul>
+            <li>프로젝트1 - 맴버1/맴버2/맴버3</li>
+            <li>프로젝트2 - 맴버2/맴버3</li>
+            <li>프로젝트3 - 맴버1/맴버4/맴버5</li>
+        </ul>
+        <a href="#">더보기...</a>
+    </div>
+    <hr>
+    <h3>망고 블로그의 회원이 되고 블로그를 관리하세요</h3>
+    <form action="main.html" method="POST" id="loginForm">
+        <fieldset>
+            <legend>로그인</legend>
+            <label for="id">아이디</label>
+            <input type="text" name="id" id="id" placeholder="아이디를 입력하세요">
+            <label for="password">패스워드</label>
+            <input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요">
+            <button id="btnSubmit" onclick="document.getElementById('loginForm').submit();">로그인</button>
+            <button id="btnJoin" onclick="alert('회원가입')">회원가입</button>
+        </fieldset>
+    </form>
+    <hr>
+    <!-- 로그인시 출력될 페이지 Ajax -->
+    <h3>블로그 및 프로젝트를 관리하세요</h3>
+    <p>나의 블로그</p>
+    <ul>
+        <li>블로그1</li>
+        <li>블로그2</li>
+        <li>블로그3</li>
+    </ul>
+    <button>블로그 관리</button>
+    <p>나의 프로젝트</p>
+    <ul>
+        <li>프로젝트1</li>
+        <li>프로젝트2</li>
+        <li>프로젝트3</li>
+    </ul>
+    <button>프로젝트 관리</button>
+    <hr>
+    <h3>망고 블로그?</h3>
+    <p>망고 블로그 소개 블라블라</p>
+</body>
+</html>

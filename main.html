@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Blog</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .sideBar{
+            float: left;
+            width: 20%;
+            min-width: 300px;
+        }
+        .contents{
+            float: left;
+            padding: 0 30px;
+            width: 80%;
+        }
+        .logo {
+            float: left;
+            width: 30%;
+        }
+        nav {
+            float: left;
+            width: 40%;
+        }
+        .memberMenu {
+            float: left;
+            width: 30%;
+        }
+
+        header {
+            height: 150px;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mango Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- 인기블로그, 블로그검색, 블로그목록 -->
+                <li>블로그</li>
+                <!-- 인기프로젝트, 프로젝트검색, 프로젝트목록-->
+                <li>프로젝트</li>
+                <!-- 게시판, 인기 블로그 게시물 -->
+                <li>커뮤니티</li>
+            </ul>
+        </nav>
+        <div class="memberMenu">
+            <ul>
+                <li>검색</li>
+                <li>알림</li>
+                <li>마이메뉴</li>
+                <li>로그아웃</li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <!-- 좌측 관리자 메뉴 -->
+    <div class="sideBar">
+        <!-- 프로필 정보 -->
+        <div class="profile">
+            <div style="background-color: gray; height: 300px;">
+                fake img
+            </div>
+            <p>알고보니유부녀</p>
+            <small>altonah@naver.com</small>
+        </div>
+        <hr>
+        <!-- 관리자 메뉴 -->
+        <div class="menu"></div>
+        <ul>
+            <li>관리자메뉴</li>
+            <li>관리자메뉴</li>
+            <li>관리자메뉴</li>
+            <li>관리자메뉴</li>
+            <li>관리자메뉴</li>
+        </ul>
+    </div>
+    <div class="contents">
+        <article>
+            <h3>나의 블로그</h3>
+            <button>블로그 생성</button>
+            <ul>
+                <li>블로그1의 정보</li>
+                <li>블로그2의 정보</li>
+                <li>블로그3의 정보</li>
+            </ul>
+            <hr>
+            <h3>참여중인 프로젝트</h3>
+            <button>프로젝트 생성</button>
+            <ul>
+                <li>프로젝트1의 정보</li>
+                <li>프로젝트2의 정보</li>
+                <li>프로젝트3의 정보</li>
+            </ul>
+            <hr>
+            <h3>통계</h3>
+            <p>블라블라...</p>
+        </article>
+    </div>
+</body>
+</html>
