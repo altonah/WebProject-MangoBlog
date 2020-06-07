@@ -1,1 +1,8 @@
-*.txt
+# 루트 디렉토리의 텍스트파일
+/*.txt
+# 깃 이그노어 파일
+.gitignore
+
+# ignore all files in the build/ directory
+/backup
+/temp
